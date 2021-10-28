@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Inscrição</title>
+</head>
+<body>
+    <header>
+        <img src="./logo.png">
+    
+        
+            <ul>
+            <li><a href="#">&#9776;</a></li>
+            <li><a href="#">HOME</a>
+            </li>
+            <li><a href="#">SOBRE</a></li>
+            <li><a href="#">CONTATO</a></li>
+        </ul>
+  
+    </header>
+    <div class="container">
+    
+    <main>
+        
+
+        <form action="" method="POST"> 
+            <h1>Inscrição</h1>
+            <fieldset>
+               <legend>Cursos Disponíveis:</legend>
+               <p>Selecione os cursos de interesse:</p>
+               <div>
+            
+                <input type="checkbox" name="curso" id="espanhol" value="espanhol" required>
+                <label for="espanhol">Espanhol</label>
+                <br>
+                <input type="checkbox" name="curso" id="ingles" value="ingles">
+                <label for="ingles">Inglês</label>
+                <br>
+                <input type="checkbox" name="curso" id="turistico" value="turistico">
+                <label for="turistico">Empreendedorismo No Setor turístico</label>
+                <br>
+                <input type="checkbox" name="cursos" id="ferramentas" value="ferramentas">
+                <label for="ferramentas">Ferramentas Online</label>
+            </div>
+            </fieldset>
+            <br>
+        </form>
+        <form action="" method="POST">
+            <fieldset>
+                <legend>Informe seus dados:</legend>
+                <div>
+                    <p>Nome Completo:</p>
+                    <input type="text" name="nome" id="nome" minlength="5" maxlength="35" required>
+
+                </div>
+                <div>
+                    <p>Data de Nascimento:</p>
+                    <input type="date" name="data" id="data" required >
+                    
+                </div>
+                <div>
+                    <p>CPF:</p>
+                    <input type="text" name="cpf" id="cpf" minlength="10" maxlength="12" required>
+                </div>
+                <div>
+                    <p>Telefone Pra Contato:</p>
+                    <input type="tel" name="numero" id="obri" value="" required minlength="8" maxlength="12" required>
+                    <input type="tel" name="numero" id="opic" value="">
+                </div>
+                <div>
+                    <p>E-mail:</p>
+                    <input type="email" name="email" id="email" minlength="5" maxlength="30" required>
+                </div>
+                <br>
+                <div>
+                    <label for="escolaridade">Nível De Escolaridade:</label>
+                    <select name="select" id="escolaridade" required>
+                        <option value="cursandoem">Cursando Ensino Médio</option>
+                        <option value="emcompleto">Ensino Médio Completo</option>
+                        <option value="cursandos">Cursando Ensino Superior</option>
+                        <option value="scompleto">Ensino Superior Completo</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <p>Gênero</p>
+                    <input type="radio" name="genero" id="fem" value="f" required>
+                    <label for="fem">Feminino</label>
+                    <input type="radio" name="genero" id="mas" value="m">
+                    <label for="mas">Masculino</label>
+                    <input type="radio" name="genero" id="out" value="o">
+                    <label for="out">Outro</label>
+                </div>
+                <br>
+                <div>
+                    <p>È Portador De Alguma Deficiência?</p>
+                    <input type="radio" name="deficiencia" id="sim" value="s" required>
+                    <label for="sim">Sim</label>
+                    <input type="radio" name="deficiencia" id="nao" value="n">
+                    <label for="nao">Não</label>
+                    <br>
+                    <p>Se Sim, Qual?</p>
+                    <input type="text" name="defi" id="defi">
+                </div>
+                <div>
+                    <p>Possui Vulnerabilidade Social?</p>
+                    <input type="radio" name="vulnerabilidade" id="si" value="s" required>
+                    <label for="si">Sim</label>
+                    <input type="radio" name="vulnerabilidade" id="na" value="n">
+                    <label for="na">Não</label>
+                </div>
+                <br>
+                    <fieldset>
+                        <p>Endereço:</p>
+                        <div>
+                            <p>Cidade:</p>
+                            <input type="text" name="cidade" id="cidade" minlength="5" maxlength="15" required>
+                        </div>
+                        
+                        <div>
+                            <p>CEP:</p>
+                            <input type="text" name="cep" id="cep" minlength="5" maxlength="10" required>
+                        </div>
+                        <div>
+                            <p>Rua:</p>
+                            <input type="text" name="rua" id="rua" minlength="5" maxlength="30" required>
+                        </div>
+                        <div>
+                            <p>Bairro:</p>
+                            <input type="text" name="bairro" id="bairro" minlength="5" maxlength="30" required>
+                        </div>
+                        <div>
+                            <p>Numero Da Casa:</p>
+                            <input type="number" name="numero" id="numero" minlength="1" maxlength="3" required >
+                        </div>
+                      <div>
+                          <p>Complemento:</p>
+                          <input type="text" name="comp" id="comp" minlength="5" maxlength="150" required>
+                      </div>
+                    </fieldset>
+                    <br>
+              <div id="b"> <a href="janela2.html">Inscrever-se</a> </div> 
+            </fieldset>
+        </form>
+    
+    </main>
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>

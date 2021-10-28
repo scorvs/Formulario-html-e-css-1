@@ -1,0 +1,181 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0;
+    background-color:whitesmoke;
+    background-image:url(./background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+img{
+    max-width:100%;
+}
+header{
+    width:100%;
+    height:auto; 
+    position: fixed; 
+    top: 0; 
+     width: 100%; 
+     background-color:#d0f0c8;
+     display:flex;
+}
+h1,p{
+    color:rgb(32, 68, 32);
+   
+}
+ul{
+    margin-top:50px;
+}
+ul a{
+    text-decoration:none;
+    list-style:none;
+    color:#fff;
+    font-size:20px;
+   
+   
+}
+ul li {
+    display:inline;
+    padding:10px;
+    text-align:center;
+
+    
+}
+ul li:first-child{ 
+    display:none;
+} 
+header img{
+    height:70px;
+    padding:20px;
+  
+}
+.container{
+    width:95%;
+    box-sizing:border-box; 
+    margin-top:110px;
+  
+}
+.main2{
+    padding:30px;
+    margin:auto;
+    width:80%;
+  
+}
+.saiba{
+    display:flex;
+    width:90%;
+   padding:10px;
+   box-sizing:border-box;
+   word-spacing: 2px;
+   line-height: 22px;
+}
+.saiba aside img{
+    padding:10px;
+    border-radius:20px;
+}
+.saiba article{
+    padding:10px;
+    width:50%;
+    margin-left:15px;
+    text-align:justify;
+}
+
+main{
+    margin:auto;
+    background-color:rgb(255, 255, 255,0.5);
+    border-radius:20px;
+    box-shadow:3px 3px 3px 3px rgb(34, 31, 31, 0.2);
+    width:90%;
+  padding:10px;
+    
+   
+}
+form{
+    margin:auto;
+    width:80%;
+  
+    box-sizing:border-box;
+}
+form input:invalid{
+    border:1px solid rgba(247, 75, 75, 0.5);
+}
+form input:valid{
+    border:1px solid rgba(93, 255, 93, 0.5);
+}
+#b{
+    margin:20px;
+   
+}
+div a{
+    padding:12px 36px;
+    margin:12px 0;
+    color:#fff;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-size:18px;
+    letter-spacing:2px;
+    border-radius:40px;
+    width:30%;
+    background:linear-gradient(90deg,#D0F0C9, #4f8842);
+   
+}
+
+@media all and (max-width:768px){
+    main{width:100%;
+    }
+
+
+    ul{
+        padding:0;
+       
+    }
+    ul li:first-child{ 
+        display:block;
+        
+    } 
+    ul li:first-child {
+        font-size:30px;   
+        padding:0px;
+    }
+    ul li {
+        list-style-type:none; 
+        text-align:left;
+        display:none; 
+
+    }
+    ul li:first-child{  
+        display:block; 
+    }
+    
+    ul:hover li { 
+            display:block; 
+    }
+
+    #b{
+        margin:5px;
+        max-width:100%;
+       
+    }
+    div a{
+        padding:12px 20px;
+        margin:auto;
+        color:#fff;
+        text-decoration:none;
+        text-transform:uppercase;
+        font-size:13px;
+        letter-spacing:2px;
+        border-radius:40px;
+        width:30%;
+        background:linear-gradient(90deg,#D0F0C9, #4f8842);
+       
+    }
+    .saiba{
+        display:block;
+    }
+    .saiba article{
+        margin:auto;
+        width:80%;
+        
+    }
+}
